@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\backend",
+    "\\backend\\Services",
+    "\\frontend",
+    "\\frontend\\src",
+    "\\frontend\\src\\redux",
+    "\\tests"
+  ],
+  "SelectedNode": "\\backend\\Services\\AuthService.cs",
+  "PreviewInSolutionExplorer": false
+}

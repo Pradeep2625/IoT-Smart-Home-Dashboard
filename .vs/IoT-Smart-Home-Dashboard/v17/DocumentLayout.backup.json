@@ -1,0 +1,462 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Services\\AuthService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Services\\AuthService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Controllers\\DevicesController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Controllers\\DevicesController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Controllers\\ControlController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Controllers\\ControlController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Services\\IoTSimulatorService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Services\\IoTSimulatorService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Data\\ApplicationDbContextFactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Data\\ApplicationDbContextFactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Data\\ApplicationDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Data\\ApplicationDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Models\\Device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Models\\Device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Models\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Models\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Models\\Alert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Models\\Alert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Hubs\\SensorHub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Hubs\\SensorHub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Services\\ISensorService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Services\\ISensorService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Services\\SensorService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Services\\SensorService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Models\\SensorReading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Models\\SensorReading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Migrations\\ApplicationDbContextModelSnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Migrations\\ApplicationDbContextModelSnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Migrations\\20250827082029_InitialSchema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Migrations\\20250827082029_InitialSchema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Migrations\\20250827082029_InitialSchema.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Migrations\\20250827082029_InitialSchema.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Migrations\\20250827083126_InitialSchema1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Migrations\\20250827083126_InitialSchema1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Migrations\\20250827083126_InitialSchema1.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Migrations\\20250827083126_InitialSchema1.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Migrations\\20250827083658_InitialSchema2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Migrations\\20250827083658_InitialSchema2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Migrations\\20250827083658_InitialSchema2.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Migrations\\20250827083658_InitialSchema2.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Controllers\\SensorsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Controllers\\SensorsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Services\\DeviceService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Services\\DeviceService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Services\\IDeviceService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Services\\IDeviceService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Services\\IAuthService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Services\\IAuthService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Program.cs",
+              "RelativeDocumentMoniker": "backend\\Program.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Program.cs",
+              "RelativeToolTip": "backend\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T08:43:14.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IoTSimulatorService.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Services\\IoTSimulatorService.cs",
+              "RelativeDocumentMoniker": "backend\\Services\\IoTSimulatorService.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Services\\IoTSimulatorService.cs",
+              "RelativeToolTip": "backend\\Services\\IoTSimulatorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T08:47:34.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "backend\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAACQAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T08:40:52.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ControlController.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Controllers\\ControlController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\ControlController.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Controllers\\ControlController.cs",
+              "RelativeToolTip": "backend\\Controllers\\ControlController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T08:45:08.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DevicesController.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Controllers\\DevicesController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\DevicesController.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Controllers\\DevicesController.cs",
+              "RelativeToolTip": "backend\\Controllers\\DevicesController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T08:44:22.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "backend\\Services\\AuthService.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Services\\AuthService.cs",
+              "RelativeToolTip": "backend\\Services\\AuthService.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACgAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T08:42:50.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationDbContextFactory.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Data\\ApplicationDbContextFactory.cs",
+              "RelativeDocumentMoniker": "backend\\Data\\ApplicationDbContextFactory.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Data\\ApplicationDbContextFactory.cs",
+              "RelativeToolTip": "backend\\Data\\ApplicationDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T09:49:37.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "backend\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "backend\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T08:57:21.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Device.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Models\\Device.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\Device.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Models\\Device.cs",
+              "RelativeToolTip": "backend\\Models\\Device.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAYwA0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T08:58:08.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Models\\User.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\User.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Models\\User.cs",
+              "RelativeToolTip": "backend\\Models\\User.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T08:58:44.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Alert.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Models\\Alert.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\Alert.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Models\\Alert.cs",
+              "RelativeToolTip": "backend\\Models\\Alert.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T08:57:46.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SensorHub.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Hubs\\SensorHub.cs",
+              "RelativeDocumentMoniker": "backend\\Hubs\\SensorHub.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Hubs\\SensorHub.cs",
+              "RelativeToolTip": "backend\\Hubs\\SensorHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T08:45:24.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ISensorService.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Services\\ISensorService.cs",
+              "RelativeDocumentMoniker": "backend\\Services\\ISensorService.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Services\\ISensorService.cs",
+              "RelativeToolTip": "backend\\Services\\ISensorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T08:46:22.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SensorService.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Services\\SensorService.cs",
+              "RelativeDocumentMoniker": "backend\\Services\\SensorService.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Services\\SensorService.cs",
+              "RelativeToolTip": "backend\\Services\\SensorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T08:47:00.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SensorReading.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Models\\SensorReading.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\SensorReading.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Models\\SensorReading.cs",
+              "RelativeToolTip": "backend\\Models\\SensorReading.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T08:58:28.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "backend\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "backend\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T09:12:04.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20250827082029_InitialSchema.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Migrations\\20250827082029_InitialSchema.cs",
+              "RelativeDocumentMoniker": "backend\\Migrations\\20250827082029_InitialSchema.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Migrations\\20250827082029_InitialSchema.cs",
+              "RelativeToolTip": "backend\\Migrations\\20250827082029_InitialSchema.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T09:12:42.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "20250827082029_InitialSchema.Designer.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Migrations\\20250827082029_InitialSchema.Designer.cs",
+              "RelativeDocumentMoniker": "backend\\Migrations\\20250827082029_InitialSchema.Designer.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Migrations\\20250827082029_InitialSchema.Designer.cs",
+              "RelativeToolTip": "backend\\Migrations\\20250827082029_InitialSchema.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T09:12:54.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20250827083126_InitialSchema1.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Migrations\\20250827083126_InitialSchema1.cs",
+              "RelativeDocumentMoniker": "backend\\Migrations\\20250827083126_InitialSchema1.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Migrations\\20250827083126_InitialSchema1.cs",
+              "RelativeToolTip": "backend\\Migrations\\20250827083126_InitialSchema1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T09:14:55.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "20250827083126_InitialSchema1.Designer.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Migrations\\20250827083126_InitialSchema1.Designer.cs",
+              "RelativeDocumentMoniker": "backend\\Migrations\\20250827083126_InitialSchema1.Designer.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Migrations\\20250827083126_InitialSchema1.Designer.cs",
+              "RelativeToolTip": "backend\\Migrations\\20250827083126_InitialSchema1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T09:14:07.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20250827083658_InitialSchema2.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Migrations\\20250827083658_InitialSchema2.cs",
+              "RelativeDocumentMoniker": "backend\\Migrations\\20250827083658_InitialSchema2.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Migrations\\20250827083658_InitialSchema2.cs",
+              "RelativeToolTip": "backend\\Migrations\\20250827083658_InitialSchema2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T09:14:22.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20250827083658_InitialSchema2.Designer.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Migrations\\20250827083658_InitialSchema2.Designer.cs",
+              "RelativeDocumentMoniker": "backend\\Migrations\\20250827083658_InitialSchema2.Designer.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Migrations\\20250827083658_InitialSchema2.Designer.cs",
+              "RelativeToolTip": "backend\\Migrations\\20250827083658_InitialSchema2.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T09:14:33.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "SensorsController.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Controllers\\SensorsController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\SensorsController.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Controllers\\SensorsController.cs",
+              "RelativeToolTip": "backend\\Controllers\\SensorsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T08:44:54.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DeviceService.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Services\\DeviceService.cs",
+              "RelativeDocumentMoniker": "backend\\Services\\DeviceService.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Services\\DeviceService.cs",
+              "RelativeToolTip": "backend\\Services\\DeviceService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T08:59:37.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IDeviceService.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Services\\IDeviceService.cs",
+              "RelativeDocumentMoniker": "backend\\Services\\IDeviceService.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Services\\IDeviceService.cs",
+              "RelativeToolTip": "backend\\Services\\IDeviceService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T08:59:54.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "backend\\Services\\IAuthService.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\IoT-Smart-Home-Dashboard\\backend\\Services\\IAuthService.cs",
+              "RelativeToolTip": "backend\\Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T08:41:34.542Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
