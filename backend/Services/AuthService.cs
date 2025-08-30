@@ -36,11 +36,12 @@ namespace backend.Services
             if (await _context.Users.AnyAsync(u => u.Username == user.Username))
                 throw new Exception("Username already exists");
 
-            user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(user.PasswordHash);
+            // Hash the password
+            user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(user.PasswordHash); // Assumes PasswordHash is the plain text password from the model
             _context.Users.Add(user);
-            throw new Exception("User Registered successsfully");
             await _context.SaveChangesAsync();
-            
+
+            // No exception for success; let the controller handle the response
         }
 
         private string GenerateJwtToken(User user)

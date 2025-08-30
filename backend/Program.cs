@@ -1,5 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using Amazon.SimpleEmail;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -44,16 +43,7 @@ builder.Services.AddScoped<IDeviceService, DeviceService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ISensorService, SensorService>();
 builder.Services.AddHostedService<IoTSimulatorService>();
-
-
-// Add SignalR services
 builder.Services.AddSignalR();
-
-// AWS SES (requires configuration, commented out)
-// builder.Services.AddAWSService<IAmazonSimpleEmailService>(new Amazon.SimpleEmail.AmazonSimpleEmailServiceConfig
-// {
-//     RegionEndpoint = Amazon.RegionEndpoint.USWest2 // Placeholder; update with your region
-// });
 
 // JWT Authentication
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -69,9 +59,35 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidAudience = builder.Configuration["Jwt:Audience"],
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]!))
         };
+        // Allow SignalR to receive JWT via query string (access_token)
+        options.Events = new JwtBearerEvents
+        {
+            OnMessageReceived = context =>
+            {
+                var accessToken = context.Request.Query["access_token"];
+                var path = context.HttpContext.Request.Path;
+                if (!string.IsNullOrEmpty(accessToken) && path.StartsWithSegments("/smartHomeHub"))
+                {
+                    context.Token = accessToken;
+                }
+                return Task.CompletedTask;
+            }
+        };
     });
 
 builder.Services.AddAuthorization();
+
+// CORS for frontend (Vite default ports + optional prod)
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend", policy =>
+    {
+        policy.WithOrigins("http://localhost:8081") // Match your frontend URL
+              .AllowAnyMethod()
+              .AllowAnyHeader()
+              .AllowCredentials(); // Include this if using cookies or authentication
+    });
+});
 
 var app = builder.Build();
 
@@ -83,9 +99,12 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseRouting();
+app.UseCors("AllowFrontend"); // CORS before auth
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
-app.MapHub<SensorHub>("/sensorHub"); // Already present, ensure it’s included
-
+// Match frontend SignalR URL
+app.MapHub<SensorHub>("/smartHomeHub"); // Updated to use SensorHub class
 app.Run();

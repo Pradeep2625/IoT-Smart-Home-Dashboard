@@ -29,5 +29,13 @@ namespace backend.Controllers
             var data = await _sensorService.GetLatestSensorData(deviceId);
             return Ok(data.SecurityAlert);
         }
+
+        [HttpGet("metrics")]
+        public async Task<IActionResult> GetMetrics(int deviceId)
+        {
+            var data = await _sensorService.GetLatestSensorData(deviceId);
+            return Ok(data);
+        }
+
     }
 }

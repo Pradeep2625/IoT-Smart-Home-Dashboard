@@ -33,14 +33,13 @@ namespace backend.Controllers
             try
             {
                 await _authService.Register(user);
-                return Ok();
-                //Console.WriteLine("User registered successfully");
+                var token = await _authService.Login(model.Username, model.Password); // Generate token using login logic
+                return Ok(new { Token = token, User = new { Id = user.Id, Email = user.Email, Name = user.Username } });
             }
             catch (Exception ex)
             {
                 return BadRequest(new { Message = ex.Message });
             }
-
         }
     }
 

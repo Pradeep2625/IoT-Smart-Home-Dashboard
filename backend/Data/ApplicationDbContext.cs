@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using backend.Models;
+
 namespace backend.Data
 {
     public class ApplicationDbContext : DbContext
@@ -13,6 +14,9 @@ namespace backend.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
+            // Seed a default user
             modelBuilder.Entity<User>().HasData(new User
             {
                 Id = 1,
@@ -20,6 +24,8 @@ namespace backend.Data
                 Email = "test@example.com",
                 PasswordHash = "hashedpassword"
             });
+
+            // Seed a default device
             modelBuilder.Entity<Device>().HasData(new Device
             {
                 Id = 1,
