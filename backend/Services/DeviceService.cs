@@ -1,7 +1,7 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using backend.Models;
 using backend.Data;
+
 namespace backend.Services
 {
     public class DeviceService : IDeviceService
@@ -13,12 +13,19 @@ namespace backend.Services
             _context = context;
         }
 
-        public async Task<IEnumerable<Device>> GetAllDevices()
+        public async Task<List<Device>> GetDevicesByUser(int userId)
+        {
+            return await _context.Devices
+                .Where(d => d.UserId == userId)
+                .ToListAsync();
+        }
+
+        public async Task<List<Device>> GetAllDevices()
         {
             return await _context.Devices.ToListAsync();
         }
 
-        public async Task<Device> GetDeviceById(int id)
+        public async Task<Device?> GetDeviceById(int id)
         {
             return await _context.Devices.FindAsync(id);
         }

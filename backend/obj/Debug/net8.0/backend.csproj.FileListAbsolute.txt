@@ -15,9 +15,14 @@ D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\backend.de
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\backend.runtimeconfig.json
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\backend.dll
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\backend.pdb
+D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\AWSSDK.Core.dll
+D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\AWSSDK.SimpleEmail.dll
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\Azure.Core.dll
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\Azure.Identity.dll
+D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\Humanizer.dll
+D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\MailKit.dll
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -43,6 +48,7 @@ D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\Microsoft.
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\Microsoft.OpenApi.dll
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\MimeKit.dll
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\Mono.TextTemplating.dll
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -58,6 +64,7 @@ D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\System.Dra
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\System.Memory.Data.dll
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\System.Security.Permissions.dll
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\System.Windows.Extensions.dll
@@ -123,6 +130,7 @@ D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\runtimes\w
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\obj\Debug\net8.0\rjimswa.dswa.cache.json
@@ -139,6 +147,3 @@ D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\obj\Debug\net8.0\refint\bac
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\obj\Debug\net8.0\backend.pdb
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\obj\Debug\net8.0\backend.genruntimeconfig.cache
 D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\obj\Debug\net8.0\ref\backend.dll
-D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\AWSSDK.Core.dll
-D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\AWSSDK.SimpleEmail.dll
-D:\OneDrive\Desktop\IoT-Smart-Home-Dashboard\backend\bin\Debug\net8.0\BCrypt.Net-Next.dll

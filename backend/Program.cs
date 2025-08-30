@@ -36,7 +36,7 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
-
+builder.Services.AddScoped<IControlService, ControlService>();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<IDeviceService, DeviceService>();
@@ -76,7 +76,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 
 builder.Services.AddAuthorization();
-
+builder.Services.AddScoped<IMailService, MailService>();
 // CORS for frontend (Vite default ports + optional prod)
 builder.Services.AddCors(options =>
 {
@@ -98,13 +98,14 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
+app.MapHub<backend.Hubs.SensorHub>("/smartHomeHub");
 app.UseCors("AllowFrontend"); // CORS before auth
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 // Match frontend SignalR URL
-app.MapHub<SensorHub>("/smartHomeHub"); // Updated to use SensorHub class
 app.Run();
