@@ -2,12 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\backend",
+    "\\backend\\Controllers",
+    "\\backend\\Data",
+    "\\backend\\Hubs",
+    "\\backend\\Models",
     "\\backend\\Services",
-    "\\frontend",
-    "\\frontend\\src",
-    "\\frontend\\src\\redux",
-    "\\tests"
+    "\\tests",
+    "\\tests\\unit-tests"
   ],
-  "SelectedNode": "\\backend\\Services\\AuthService.cs",
+  "SelectedNode": "\\backend\\Services\\SensorService.cs",
   "PreviewInSolutionExplorer": false
 }

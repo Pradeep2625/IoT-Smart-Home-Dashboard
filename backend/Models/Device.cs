@@ -17,10 +17,8 @@ namespace backend.Models
 
         public bool Status { get; set; }
 
-        // Nullable navigation property to avoid CS8618
         public virtual User? User { get; set; }
 
-        // Initialize collections to avoid CS8618
         public virtual ICollection<SensorReading> SensorReadings { get; set; } = new List<SensorReading>();
 
         public virtual ICollection<Alert> Alerts { get; set; } = new List<Alert>();

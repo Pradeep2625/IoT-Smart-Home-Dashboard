@@ -41,19 +41,31 @@ namespace backend.Services
             await _context.SaveChangesAsync();
         }
 
+        // Services/SensorService.cs
         public async Task TriggerAlert(Alert alert)
         {
             _context.Alerts.Add(alert);
             await _context.SaveChangesAsync();
 
-            // Correct: Use the class-level field _hubContext
-            await _hubContext.Clients.All.SendAsync("ReceiveAlert", alert);
-
-            // Fetch device and owner for email
+            // Fetch device and owner
             var device = await _context.Devices
                 .Include(d => d.User)
                 .FirstOrDefaultAsync(d => d.Id == alert.DeviceId);
 
+            if (device?.UserId != null)
+            {
+                // Send only to this user’s group; matches hub OnConnectedAsync group name
+                await _hubContext.Clients
+                    .Group($"user:{device.UserId}")
+                    .SendAsync("ReceiveAlert", new
+                    {
+                        id = alert.Id,
+                        type = alert.Type,
+                        message = alert.Message,
+                        timestamp = alert.Timestamp
+                    });
+            }
+            // Optional email remains unchanged
             if (device?.User?.Email != null)
             {
                 var mail = new MailData
@@ -63,10 +75,9 @@ namespace backend.Services
                     EmailSubject = $"Smart Home Alert: {alert.Type}",
                     EmailBody = $"<p>{alert.Message}</p><p>Time (UTC): {alert.Timestamp}</p>"
                 };
-
-                // Send the email notification
                 await _mailService.SendMailAsync(mail);
             }
         }
+
     }
 }

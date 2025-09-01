@@ -1,43 +1,52 @@
-﻿
-
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using backend.Models;
 using backend.Data;
-using backend.Models;
-using Microsoft.Extensions.Logging;
-
 namespace backend.Services
 {
-    public interface IControlService
-    {
-        Task SetDeviceArmedStatus(int deviceId, bool isArmed, int userId);
-    }
-
     public class ControlService : IControlService
     {
         private readonly ApplicationDbContext _context;
-        private readonly ILogger<ControlService> _logger;
 
-        public ControlService(ApplicationDbContext context, ILogger<ControlService> logger)
+        public ControlService(ApplicationDbContext context)
         {
             _context = context;
-            _logger = logger;
         }
 
-        public async Task SetDeviceArmedStatus(int deviceId, bool isArmed, int userId)
+        public async Task UpdateDeviceStatus(int deviceId, bool status)
         {
-            var device = await _context.Devices
-                .FirstOrDefaultAsync(d => d.Id == deviceId && d.UserId == userId);
-
-            if (device == null)
+            var device = await _context.Devices.FindAsync(deviceId);
+            if (device != null)
             {
-                _logger.LogWarning("Attempt to toggle armed status for non-existent or unauthorized device {DeviceId} by user {UserId}", deviceId, userId);
-                throw new UnauthorizedAccessException("Device not found or user is not the owner.");
+                device.Status = status;
+                await _context.SaveChangesAsync();
             }
+        }
 
-            device.Status = isArmed;
-            await _context.SaveChangesAsync();
-            _logger.LogInformation("Device {DeviceId} armed status set to {IsArmed}", deviceId, isArmed);
+        public async Task UpdateThermostatValue(int deviceId, double value)
+        {
+            var device = await _context.Devices.FindAsync(deviceId);
+            if (device != null && device.Type == "thermostat")
+            {
+                _context.SensorReadings.Add(new SensorReading
+                {
+                    DeviceId = deviceId,
+                    Type = "temperature",                // required field
+                    Value = value.ToString(),            // convert double → string
+                    Timestamp = DateTime.UtcNow
+                });
+
+                await _context.SaveChangesAsync();
+            }
+        }
+
+
+        public async Task ToggleDoorStatus(int deviceId, bool status)
+        {
+            await UpdateDeviceStatus(deviceId, status);
+        }
+
+        public async Task ToggleArmedStatus(int deviceId, bool status)
+        {
+            await UpdateDeviceStatus(deviceId, status);
         }
     }
 }

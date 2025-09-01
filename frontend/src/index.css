@@ -1,13 +1,170 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* src/index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Smart Home Dashboard Dark Theme */
+    --background: 218 23% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 30% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 30% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 188 83% 58%;
+    --primary-foreground: 218 23% 8%;
+
+    --secondary: 220 30% 15%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 15% 20%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 188 83% 58%;
+    --accent-foreground: 218 23% 8%;
+
+    --destructive: 0 62.8% 55.3%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 25%;
+    --input: 220 15% 25%;
+    --ring: 188 83% 58%;
+
+    --radius: 0.5rem;
+
+    /* Glow and transitions */
+    --glow-primary: 0 0px 10px hsl(var(--primary));
+    --glow-secondary: 0 0px 5px hsl(var(--secondary));
+    --transition-smooth: all 0.2s ease-in-out;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components {
+  /* The core glassmorphism card style */
+  .glass-card {
+    @apply backdrop-blur-lg bg-card/80 border border-border/30 rounded-2xl;
+    box-shadow: var(--glow-secondary);
+    transition: var(--transition-smooth);
+  }
+  
+  .glass-card:hover {
+    @apply bg-card/90;
+    box-shadow: var(--glow-primary);
+    transform: translateY(-2px);
+  }
+  
+  /* Specific component styles inheriting the glass-card effect */
+  .metric-card {
+    @apply glass-card p-6 flex flex-col gap-4;
+  }
+  
+  .control-card {
+    @apply glass-card p-6 flex items-center justify-between;
+  }
+  
+  .chart-card {
+    @apply glass-card p-6;
+  }
+  
+  /* Grid layout for the dashboard */
+  .dashboard-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6;
+  }
+  
+  .dashboard-header {
+    @apply flex items-center justify-between p-6 border-b border-border/30;
+  }
+  
+  /* Glow effect for text, used for headings or key elements */
+  .glow-text {
+    @apply text-primary;
+    text-shadow: var(--glow-primary);
+  }
+  
+  /* Additional styles for custom components like the switch */
+  .switch-track {
+    @apply relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .switch-track[data-state="checked"] {
+    @apply bg-primary;
+  }
+  .switch-track[data-state="unchecked"] {
+    @apply bg-input;
+  }
+
+  .switch-thumb {
+    @apply pointer-events-none block h-5 w-5 rounded-full bg-background ring-0 transition-transform data-[state=checked]:translate-x-5 data-[state=unchecked]:translate-x-0;
+  }
+  @layer components {
+  /* ... (previous component styles) ... */
+  .chart-card {
+    @apply glass-card p-6;
+  }
+
+  .switch-track {
+    @apply relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  
+  .switch-track[data-state="checked"] {
+    @apply bg-primary;
+  }
+  
+  .switch-track[data-state="unchecked"] {
+    @apply bg-input;
+  }
+  
+  .switch-track .switch-thumb {
+    @apply pointer-events-none block h-5 w-5 rounded-full bg-background ring-0 transition-transform;
+  }
+  
+  .switch-track[data-state="checked"] .switch-thumb {
+    @apply translate-x-5;
+  }
+  .chart-line {
+    filter: drop-shadow(0 0 8px currentColor);
+  }
+  /* Add near the bottom of src/index.css */
+  .thermo-slider .switch-track,
+  .thermo-slider .range,
+  .thermo-slider [data-orientation='horizontal'] {
+    /* ensures track visibility on dark bg */
+  }
+
+  .thermo-slider .range-slider__range,
+  .thermo-slider .range {
+    background: hsl(var(--accent));
+    box-shadow: 0 0 8px hsl(var(--accent));
+  }
+
+  .thermo-slider .range-slider__thumb,
+  .thermo-slider .thumb {
+    border: 2px solid hsl(var(--accent));
+    box-shadow: 0 0 8px hsl(var(--accent));
+  }
+  /* Rectangular card shape and tighter padding */
+  .metric-card, .control-card, .chart-card {
+    min-height: 160px;            /* rectangular */
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  .dashboard-grid {
+    /* already present; tighten gaps for a sleeker look */
+    gap: 18px;
+  }
+
+
+}
 }

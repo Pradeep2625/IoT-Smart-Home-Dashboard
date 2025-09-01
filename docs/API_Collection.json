@@ -1,0 +1,296 @@
+{
+  "info": {
+    "name": "Backend API Collection",
+    "_postman_id": "12345678-abcd-efgh-ijkl-1234567890ab",
+    "description": "Postman collection generated from provided OpenAPI specification",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"testuser\",\n  \"password\": \"password123\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/auth/login",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "auth", "login"]
+            }
+          }
+        },
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"newuser\",\n  \"email\": \"newuser@example.com\",\n  \"password\": \"password123\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/auth/register",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "auth", "register"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Control",
+      "item": [
+        {
+          "name": "Light Control",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "true",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/control/light?id=1&name=LivingRoom",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "control", "light"],
+              "query": [
+                { "key": "id", "value": "1" },
+                { "key": "name", "value": "LivingRoom" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Thermostat Control",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "23.5",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/control/thermostat?id=2&name=Bedroom",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "control", "thermostat"],
+              "query": [
+                { "key": "id", "value": "2" },
+                { "key": "name", "value": "Bedroom" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Door Control",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "false",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/control/door?id=3&name=MainDoor",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "control", "door"],
+              "query": [
+                { "key": "id", "value": "3" },
+                { "key": "name", "value": "MainDoor" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Armed Control",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "true",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/control/armed?id=4&name=SecuritySystem",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "control", "armed"],
+              "query": [
+                { "key": "id", "value": "4" },
+                { "key": "name", "value": "SecuritySystem" }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Devices",
+      "item": [
+        {
+          "name": "Get Devices",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/devices",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "devices"]
+            }
+          }
+        },
+        {
+          "name": "Create Device",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Fan\",\n  \"type\": \"light\",\n  \"status\": true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/devices",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "devices"]
+            }
+          }
+        },
+        {
+          "name": "Update Device",
+          "request": {
+            "method": "PUT",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": 1,\n  \"name\": \"UpdatedFan\",\n  \"type\": \"light\",\n  \"status\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/devices/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "devices", "1"]
+            }
+          }
+        },
+        {
+          "name": "Delete Device",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{baseUrl}}/api/devices/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "devices", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sensors",
+      "item": [
+        {
+          "name": "Get Security Sensor",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/sensors/security?deviceId=1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "sensors", "security"],
+              "query": [
+                { "key": "deviceId", "value": "1" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Security Sensor History",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/sensors/security/history?deviceId=1&take=20",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "sensors", "security", "history"],
+              "query": [
+                { "key": "deviceId", "value": "1" },
+                { "key": "take", "value": "20" }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Test Mail",
+      "item": [
+        {
+          "name": "Send Test Mail",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{baseUrl}}/api/test-mail?to=test@example.com&name=Tester",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "test-mail"],
+              "query": [
+                { "key": "to", "value": "test@example.com" },
+                { "key": "name", "value": "Tester" }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5125"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{jwtToken}}",
+        "type": "string"
+      }
+    ]
+  }
+}

@@ -27,37 +27,6 @@ namespace backend.Controllers
             _controlService = controlService;
         }
 
-        // This attribute specifies that this action handles POST requests
-        [HttpPost("armed")]
-        public async Task<IActionResult> ToggleArmedStatus([FromBody] ArmedStatusDto dto)
-        {
-            if (dto == null)
-            {
-                return BadRequest("Invalid request body.");
-            }
-
-            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            if (userIdClaim == null)
-            {
-                return Unauthorized();
-            }
-
-            if (!int.TryParse(userIdClaim, out int userId))
-            {
-                return Unauthorized();
-            }
-
-            try
-            {
-                await _controlService.SetDeviceArmedStatus(dto.DeviceId, dto.IsArmed, userId);
-                return Ok();
-            }
-            catch (UnauthorizedAccessException)
-            {
-                return Forbid();
-            }
-        }
-
         // ✅ Single implementation for user id lookup
         private static readonly string NameIdUri = "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier";
         private int CurrentUserId => int.Parse(
@@ -104,11 +73,12 @@ namespace backend.Controllers
             if (device.Type == null || !device.Type.ToLower().Contains("thermostat"))
                 return BadRequest(new { message = "Device is not a thermostat type" });
 
-            await _context.SaveChangesAsync();
-
+            // persist reading for history
+            await _controlService.UpdateThermostatValue(device.Id, temperature); // write SensorReading
             await _hub.Clients.All.SendAsync("ReceiveDeviceState", device.Id, new { type = "thermostat", value = temperature });
             return Ok(new { message = $"Thermostat '{device.Name}' set to {temperature}°C" });
         }
+
 
         // Toggle door
         [HttpPost("door")]
@@ -125,6 +95,24 @@ namespace backend.Controllers
             await _hub.Clients.All.SendAsync("ReceiveDeviceState", device.Id, new { type = "door", status = device.Status });
             return Ok(new { message = $"Door '{device.Name}' updated", status = device.Status });
         }
+        // Toggle armed status (security system)
+        [HttpPost("armed")]
+        public async Task<IActionResult> ToggleArmed([FromQuery] int? id, [FromQuery] string? name, [FromBody] bool isArmed)
+        {
+            var device = await ResolveOwnedDevice(id, name, CurrentUserId);
+            if (device == null)
+                return NotFound(new { message = "Security device not found" });
+
+            if (device.Type == null || !device.Type.ToLower().Contains("security"))
+                return BadRequest(new { message = "Device is not a security system type" });
+
+            device.Status = isArmed;
+            await _context.SaveChangesAsync();
+
+            await _hub.Clients.All.SendAsync("ReceiveDeviceState", device.Id, new { type = "security", status = device.Status });
+            return Ok(new { message = $"Security system '{device.Name}' updated", armed = device.Status });
+        }
+
     }
 
 }

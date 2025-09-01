@@ -102,10 +102,10 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
-app.MapHub<backend.Hubs.SensorHub>("/smartHomeHub");
 app.UseCors("AllowFrontend"); // CORS before auth
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 // Match frontend SignalR URL
+app.MapHub<SensorHub>("/smartHomeHub");
 app.Run();
